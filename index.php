@@ -2,8 +2,10 @@
 
 require_once("config.php");
 
-$sql = new Sql();
+$usuario = new Usuario();
 
-$usuarios = $sql->select("SELECT * FROM tb_usuarios");
+$usuario->loadById(2);
+
+echo $usuario;
 
 ?>
