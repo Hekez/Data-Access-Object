@@ -27,8 +27,13 @@ require_once("config.php");
 //$aluno->insert();
 //echo $aluno;
 
+//Update usuario
+//$usuario = new Usuario();
+//$usuario->loadById(7);
+//$usuario->update("Jorginho", "xxxxx");
+
 $usuario = new Usuario();
 $usuario->loadById(7);
-$usuario->update("Jorginho", "xxxxx");
+$usuario->delete();
 
 ?>
